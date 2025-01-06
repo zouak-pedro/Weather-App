@@ -24,4 +24,4 @@ function checkweather(city) {
   }
 }
 
-// let apiData = checkweather(cityName);
+// checkweather(cityName);
