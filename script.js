@@ -6,6 +6,7 @@ apiData.name = "";
 function checkweather(city) {
   if (!city || typeof city !== "string" || city.trim() === "") {
     console.error("Invalid city name. Please provide a valid city name.");
+    document.querySelector(".city_error").style.opacity = 1;
   } else if (apiData.name === city) {
     console.error("You have already searched.");
   } else {
@@ -21,10 +22,12 @@ function checkweather(city) {
       .then((data) => {
         apiData = data;
         console.log(data);
+        document.querySelector(".city_error").style.opacity = 0;
         updatePage(apiData);
       })
       .catch((error) => {
         console.error("Problem with fetch operation", error);
+        document.querySelector(".city_error").style.opacity = 1;
       });
   }
 }
