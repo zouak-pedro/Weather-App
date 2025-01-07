@@ -1,0 +1,91 @@
+:root {
+  --primary: #e7effd;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.search_bar {
+  border-radius: 60px;
+  background-color: #f9fafc;
+  border: solid 1px #e2e2e4;
+  padding: 10px 25px;
+  font-size: 1rem;
+}
+
+.search_bar_search {
+  position: absolute;
+  font-weight: 600;
+  width: 40px;
+  right: 2.5rem;
+  top: 1.3rem;
+  border-radius: 60px;
+  border: solid 1px #bebef3;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #1876f0;
+  color: #ffffff;
+  /* background-color: var(--primary); */
+}
+.search_location {
+  display: flex;
+  gap: 15px;
+}
+.search_location_img {
+  background-color: #f8fafc;
+  padding: 10px;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+}
+.search_location_info_name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.main_dayimg {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}
+.img_cloud {
+  /* background-image: url("imag/Intersect.svg"); */
+  /* background-image: url("https://openweathermap.org/img/wn/02d@4x.png"); */
+}
+.main_temp {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detail > div {
+  background-color: var(--primary);
+  display: flex;
+  border-radius: 10px;
+}
+.detail img {
+  padding: 0 15px;
+}
