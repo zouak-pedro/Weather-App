@@ -50,7 +50,6 @@ nav {
   cursor: pointer;
   background-color: #1876f0;
   color: #ffffff;
-  /* background-color: var(--primary); */
 }
 .search_location {
   display: flex;
@@ -79,10 +78,6 @@ nav {
   width: 200px;
   height: 200px;
   background-size: contain;
-}
-.img_cloud {
-  /* background-image: url("imag/Intersect.svg"); */
-  /* background-image: url("https://openweathermap.org/img/wn/02d@4x.png"); */
 }
 .main_temp {
   font-size: 3rem;
